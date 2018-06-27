@@ -384,7 +384,7 @@ $(document).ready(function(){
 		      							if(isset($_GET['position']) && !empty($_GET['position'])){		      								
 
 											echo "<input readonly type='text' id='apply_position' class='form-control' value='".$_GET['position']."' name='position_name' >";
-
+											echo'<div id="positionErrorMessage" style="display:none;color:red;">Select your position here.</div>';
 		      							}else{
 										
 
@@ -420,7 +420,7 @@ $(document).ready(function(){
 
 								<div id="" class="form-group label-floating" >
 
-										<input type="text" style="display:none;"  name="other_position" placeholder="Position" class="form-control" id="otherpositionDiv" required/>
+										<input type="text" style="display:none;"  name="other_position" placeholder="Position" class="form-control" id="otherpositionDiv" />
 
 										<div class="help-block with-errors" id="otherpositionDiv2" style="color: red"></div>
 
@@ -818,7 +818,7 @@ $(document).ready(function(){
 				      <select class="select form-control" name="Country_name" id="countryid" onchange="countryfunction(this)">
 				      		<?php  
       							include('connect.php');
-      							$sql = "SELECT * FROM `tbl_country`";
+      							$sql = "SELECT * FROM `tbl_country` ORDER BY `Country_name`";
       							$result = $conn->query($sql);
       							while($row = $result->fetch_assoc()){
       							echo "<option value='".$row['Country_name']."'>".$row['Country_name']."</option>";
@@ -943,7 +943,7 @@ $(document).ready(function(){
 
 								<label for="religion" class="control-label" onkeypress='return disableNumeric(event);' onkeyup='(event);' >Religion</label>
 
-								<input type="text" name="religion123" class="form-control" id="religion" maxlength="20" onkeypress='return disableNumeric(event);' onkeyup='(event);'>
+								<input type="text" name="religion123" class="form-control" id="religion" maxlength="30" onkeypress='return disableNumeric(event);' onkeyup='(event);'>
 
 							</div>
 
@@ -1089,7 +1089,7 @@ $(document).ready(function(){
 
 										<label class="control-label" for="skype">Skype User Id</label>
 
-										<input type="text" name="skype_userid" class="form-control" id="skype">
+										<input type="text" name="skype_userid" class="form-control" id="skype" maxlength="32">
 
 									</div>
 
@@ -1101,7 +1101,7 @@ $(document).ready(function(){
 
 										<label class="control-label" for="facebook">Facebook account</label>
 
-										<input class="form-control" type="text" id="fbact" name="facebook">
+										<input class="form-control" type="text" id="fbact" name="facebook" maxlength="50">
 
 									</div>
 
@@ -1117,7 +1117,7 @@ $(document).ready(function(){
 
 											<span class="input-group-addon">@</span>
 
-											<input class="form-control" id="twact" type="text" name="twitter">
+											<input class="form-control" id="twact" type="text" name="twitter" maxlength="15">
 
 										</div>
 
@@ -1723,7 +1723,7 @@ $(document).ready(function(){
 
 	                                <label class="control-label" for="age">Age</label>
 
-	                                <input id="age" class="form-control" type="number" name="child_age1" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+	                                <input id="age" class="form-control" type="text" name="child_age1" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
 
 	                              </div>
 
@@ -1761,7 +1761,7 @@ $(document).ready(function(){
 
                                 <label class="control-label" for="age">Age</label>
 
-                                <input id="age" class="form-control" type="number" name="child_age2" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+                                <input id="age" class="form-control" type="text" name="child_age2" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
 
                               </div>
 
@@ -1801,7 +1801,7 @@ $(document).ready(function(){
 
                                 <label class="control-label" for="age">Age</label>
 
-                                <input id="age" class="form-control" type="number" name="child_age3" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+                                <input id="age" class="form-control" type="text" name="child_age3" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
 
                               </div>
 
@@ -1849,7 +1849,7 @@ $(document).ready(function(){
 									<select class="form-control" name="fCountry_name" id="fcountryid" onchange="fcountryfunction(this)">
 									    <?php  
 					      					include('connect.php');
-					      					$sql = "SELECT * FROM `tbl_country`";
+					      					$sql = "SELECT * FROM `tbl_country` ORDER BY `Country_name`";
 					      					$result = $conn->query($sql);
 					      					while($row = $result->fetch_assoc()){
 					      					echo "<option value='".$row['Country_name']."'>".$row['Country_name']."</option>";
@@ -1923,7 +1923,7 @@ $(document).ready(function(){
 
 					      					include('connect.php');
 
-					      					$sql = "SELECT * FROM `tbl_country`";
+					      					$sql = "SELECT * FROM `tbl_country` ORDER BY `Country_name`";
 
 					      					$result = $conn->query($sql);
 
@@ -4534,7 +4534,7 @@ $(document).ready(function(){
 
                         x++; //text box increment
 
-                        $(wrapper).append('<div class="row col-md-12"><div class="col-md-6"></div><div class="col-md-6"><div class="col-md-7"><div class="form-group label-floating"><label class="control-label" for="child" >Enter child name</label><input type="text" name="child_name' + x + '" id="child" class="form-control"></div></div> <div class="col-md-3"><div class="form-group label-floating"><label class="control-label" for="age">Age</label><input id="age" class="form-control" type="number" name="child_age' + x + '"/></div></div><button type=button style="margin-top: 8%" class="btn btn-raised btn-sm btn-danger remove_field pull-right">Remove</button></div></div>'); //add input box
+                        $(wrapper).append('<div class="row col-md-12"><div class="col-md-6"></div><div class="col-md-6"><div class="col-md-7"><div class="form-group label-floating"><label class="control-label" for="child" >Enter child name</label><input onkeypress="return disableNumeric(event)"; onkeyup="(event)" type="text" name="child_name' + x + ' " id="child" class="form-control"></div></div> <div class="col-md-3"><div class="form-group label-floating"><label class="control-label" for="age">Age</label><input id="age" class="form-control" type="text"  onkeypress="return disableLettersOthers(event)"; onkeyup="(event)" maxlength="2" name="child_age' + x + '"/></div></div><button type=button style="margin-top: 8%" class="btn btn-raised btn-sm btn-danger remove_field pull-right">Remove</button></div></div>'); //add input box
 
                     }
 
@@ -4580,7 +4580,7 @@ $(document).ready(function(){
 
                         x++; //text box increment
 
-                       $(wrapper).append('<div class="row col-md-12"><div class="col-md-6"><div class="col-md-7"><div class="form-group label-floating"><label class="control-label" for="sibling" >Enter sibling name</label><input type="text" id="sibling" class="form-control" name="sibling' + x + '"></div></div> <div class="col-md-3"><div class="form-group label-floating"><label class="control-label" for="sage">Age</label><input id="sage" name="sibling_age' + x + '" class="form-control" type="text" onkeypress=return disableLettersOthers(event); maxlength="2"/></div></div><button type=button style="margin-top: 7%" class="btn btn-raised btn-sm btn-danger remove_field pull-right">Remove</button></div></div>'); //add input box
+                       $(wrapper).append('<div class="row col-md-12"><div class="col-md-6"><div class="col-md-7"><div class="form-group label-floating"><label class="control-label" for="sibling" >Enter sibling name</label><input onkeypress=" return disableNumeric(event)" onkeyup="(event)"type="text" id="sibling" class="form-control" name="sibling' + x + '"></div></div> <div class="col-md-3"><div class="form-group label-floating"><label class="control-label" for="sage">Age</label><input id="sage" name="sibling_age' + x + '" class="form-control" type="text" onkeypress="return disableLettersOthers(event)"; maxlength="2"/></div></div><button type=button style="margin-top: 7%" class="btn btn-raised btn-sm btn-danger remove_field pull-right">Remove</button></div></div>'); //add input box
 
                     }
 

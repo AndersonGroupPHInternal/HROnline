@@ -20,6 +20,10 @@
 				END) as `schedule`
 		FROM tbl_application )myTable INNER JOIN tbl_position as a where   DATE_FORMAT(myTable.`Timestamp`, '%Y-%m-%d') between '".$startDate."' and '".$endDate."' GROUP BY a.position_name order by counter asc ";
 									
+
+
+
+									
 		$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		while($row = $result->fetch_assoc()) {
