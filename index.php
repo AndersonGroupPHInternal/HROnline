@@ -1349,484 +1349,6 @@ $(document).ready(function(){
 				</div>
 
 
-
-				<div class="card container">
-
-					<!-- <img class="img" src="lady liberty.png" style=" width: 85%;"> -->
-
-					<!-- <a class="btn btn-raised btn-sm btn-primary pull-right" value="" id="saveQuit3" style="color:white;float:right;text-decoration:none;margin-top:2%;">Save and Quit</a> -->
-
-					<h6 style="padding-top: 30px"><i class="fa fa-group"> </i><b> FAMILY BACKGROUND</b></h6>
-
-					<hr style="padding-bottom: 10px;">
-
-					<!-- for married ones -->
-
-					<div id="married_div" class="row col-md-12">
-
-						<h2 style="padding-top: 2%;" align="center"> Spouse </h2>
-
-						<div class="col-md-6">
-
-							<div class="form-group label-floating">
-
-					      		<label class="control-label" for="slname">Spouse's Last Name</label>
-
-					      		<input id="slname" type="text" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event);' onkeyup='(event);' >
-
-							</div>
-
-							<div class="form-group label-floating">
-
-					      		<label class="control-label" for="sfname">Spouse's First Name</label>
-
-					      		<input id="sfname" type="text" name="spouse_firstname" maxlength="50" class="form-control" name="spouse_lastname" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-					      		<label class="control-label" for="smname">Spouse's Middle Name</label>
-
-					      		<input id="smname" type="text" name="spouse_midname" maxlength="50" class="form-control" name="spouse_lastname" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-6">
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="occupation">Spouse's Occupation</label>
-
-								<input type="text" name="spouse_occ" id="occupation" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="employer-name">Company Name</label>
-
-								<input type="text" name="spouse_empname" id="employer-name" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-						</div>
-
-					</div> <!-- end for married ones -->
-
-								<!-- for widowed ones -->
-
-					<div id="widowed_div" class="row col-md-12">
-
-						<h2 style="padding-top: 2%;" align="center"> Spouse </h2>
-
-						<div class="col-md-6">
-
-							<div class="form-group label-floating">
-
-					      		<label class="control-label" for="slname">Spouse's Last Name</label>
-
-					      		<input id="slname" type="text" name="widowed_lname" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-					      		<label class="control-label" for="sfname">Spouse's First Name</label>
-
-					      		<input id="sfname" type="text" name="widowed_fname" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-					      		<label class="control-label" for="smname">Spouse's Middle Name</label>
-
-					      		<input id="smname" type="text" name="widowed_midname" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-						</div>
-
-						<div class="col-md-6">
-
-						</div> 
-
-					</div> <!-- end for widowed ones -->
-
-					<div class="row col-md-12">
-
-						<div class="col-md-6">
-
-							<h3 style="padding-top: 3%;" align="center">Father's Information</h3>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="flname">Father's Last name</label>
-
-								<input type="text" name="flname" id="flname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="ffname">Father's First Name</label>
-
-								<input type="text" name="ffname" id="ffname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="fmname">Father's Middle Name</label>
-
-								<input type="text" name="fmname" id="fmname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-								<label class="control-label" for="fplace_birth">Place of Birth</label>
-								<input type="text" name="father_placebirth" id="fplace_birth" class="form-control" data-toggle="modal" data-target="#modalFPB"  readonly>
-							</div>
-
-						</div>
-
-						<div class="col-md-6">
-
-							<h3 style="padding-top: 3%;" align="center">Mother's Information</h3>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="mlname">Mother's Maiden name</label>
-
-								<input type="text" name="mother_lname" id="mlname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="mfname">Mother's First Name</label>
-
-								<input type="text" name="mother_fname" id="mfname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="mmname">Mother's Middle Name</label>
-
-								<input type="text" name="mother_midname" id="mmname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label class="control-label" for="mplace_birth">Place of Birth</label>
-
-								<input type="text" name="mother_placebirth" id="mplace_birth" class="form-control" data-toggle="modal" data-target="#modalMPB" readonly>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="col-md-12">
-
-						<label class="switch col-md-4">
-
-							<input id="positive" type="checkbox"/>
-
-							<div class="slider round"></div>
-
-						</label>
-
-						<h5 class="col-md-5">  Do you have child/Children?</h5>	
-
-					</div>
-
-
-
-                    <div class="wawsibling btn-group-sm"  id="siblings">
-
-                    	<div class="row">
-
-                    		<div class="col-md-12">	
-
-                      			<button type="button" class="btn btn-sm btn-raised btn-info add_field_button_sibling">Add Sibling</button>
-
-                    		</div>
-
-                    	</div>
-
-                      <div class="input_fields_wrap_sibling">
-
-                        <div class="row col-md-12">
-
-                          <div class="col-md-6">
-
-                            <div class="col-md-7">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="sibling" >Enter sibling name</label>
-
-                                <input type="text" name="sibling1" id="sibling" class="form-control" onkeypress='return disableNumeric(event);'>
-
-                              </div>
-
-                            </div> 
-
-                            <div class="col-md-3">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="sage">Age</label>
-                                
-                                <input type="text" class="form-control" name="sibling_age1" id="sage" minlength="1" class="form-control" maxlength="2" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
-
-                              </div>
-
-                            </div>
-
-                          </div>
-
-                        </div> <!-- second sibling -->
-
-                        <div class="row col-md-12">
-
-                          <div class="col-md-6">
-
-                            <div class="col-md-7">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="sibling" >Enter sibling name</label>
-
-                                <input type="text" name="sibling2" id="sibling" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-                              </div>
-
-                            </div> 
-
-                            <div class="col-md-3">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="sage">Age</label>
-
-                               <input type="text" class="form-control" name="sibling_age2" id="sage" minlength="1" class="form-control" maxlength="2" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
-
-                              </div>
-
-                            </div>
-
-                            <button type="button" style="margin-top: 8%" class="btn btn-raised btn-sm btn-danger pull-right remove_field" >Remove</button>
-
-                          </div>
-
-                        </div><!-- third sibling -->
-
-                        <div class="row col-md-12" >
-
-                          <div class="col-md-6">
-
-                            <div class="col-md-7">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="sibling" >Enter sibling name</label>
-
-                                <input type="text" name="sibling3" id="sibling" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-                              </div>
-
-                            </div> 
-
-                            <div class="col-md-3">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="sage">Age</label>
-
-                                <input type="text" class="form-control" name="sibling_age3" id="sage" minlength="1" class="form-control" maxlength="2" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
-
-                              </div>
-
-                            </div>
-
-                            <button type="button" style="margin-top: 8%" class="btn btn-raised btn-danger btn-sm pull-right remove_field">Remove</button>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-
-
-                    <div class="wawchild btn-group-sm" id="children" style="display: none;">
-
-                      <div class="input_fields_wrap">
-
-                        <div class="row col-md-12">
-
-                        <div class="col-md-6">
-
-                            <!-- fillings -->
-
-                          </div>
-
-                        <div class="col-md-6">
-
-                          <button type="button" class="btn btn-raised btn-sm btn-info add_field_button">Add Dependents</button>
-
-                        </div>
-
-                          <div class="col-md-6">
-
-                            <!-- fillings -->
-
-                          </div>
-
-	                    </div>
-
-	                    <div class="row col-md-12" id="1chi">
-
-	                    	<div class="col-md-6">
-
-	                    		<!-- fillings -->
-
-	                    	</div>
-
-	                    	<div class="col-md-6">
-
-	                            <div class="col-md-7">
-
-	                              <div class="form-group label-floating">
-
-	                                <label class="control-label" for="child" >Enter child name</label>
-
-	                                <input type="text" name="child_name1" id="child" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-	                              </div>
-
-	                            </div> 
-
-	                            <div class="col-md-3">
-
-	                              <div class="form-group label-floating">
-
-	                                <label class="control-label" for="age">Age</label>
-
-	                                <input id="age" class="form-control" type="text" name="child_age1" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
-
-	                              </div>
-
-	                            </div>
-
-	                        </div>
-
-	                    </div>
-
-                        <div class="row col-md-12" id="2chi">
-
-                          <div class="col-md-6">
-
-                            <!-- fillings -->
-
-                          </div>
-
-                          <div class="col-md-6">
-
-                            <div class="col-md-7">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="child" >Enter child name</label>
-
-                                <input type="text" name="child_name2" id="child" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-                              </div>
-
-                            </div> 
-
-                            <div class="col-md-3">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="age">Age</label>
-
-                                <input id="age" class="form-control" type="text" name="child_age2" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
-
-                              </div>
-
-                            </div>
-
-                            <button type=button style="margin-top: 8%" class="btn btn-raised btn-sm btn-danger pull-right remove_field">Remove</button>
-
-                          </div>
-
-                        </div>
-
-                        <div class="row col-md-12" id="3chi">
-
-                          <div class="col-md-6">
-
-                            <!-- fillings -->
-
-                          </div>
-
-                          <div class="col-md-6">
-
-                            <div class="col-md-7">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="child" >Enter child name</label>
-
-                                <input type="text" name="child_name3" id="child" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
-
-                              </div>
-
-                            </div> 
-
-                            <div class="col-md-3">
-
-                              <div class="form-group label-floating">
-
-                                <label class="control-label" for="age">Age</label>
-
-                                <input id="age" class="form-control" type="text" name="child_age3" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
-
-                              </div>
-
-                            </div>
-
-                            <button type=button style="margin-top: 8%" class="btn btn-raised btn-danger btn-sm pull-right remove_field">Remove</button>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                    </div>
-
-					<!-- buttons -->
-
-					<!-- <button type="button" class="btn btn-raised btn-primary pull-left" onclick="document.getElementById('container2').style.display='block';document.getElementById('container3').style.display='none';">PREVIOUS</button>
-
-					<button type="button" style="margin-bottom: 1%" class="btn btn-raised btn-primary pull-right" onclick="document.getElementById('container3').style.display='none'; document.getElementById('container4').style.display='block';">NEXT</button>	 -->
-
-				</div> <!-- end of container 3 -->
-
-
-
 				<!-- START OF FATHER'S BIRTH PLACE MODAL -->
 				<div id="modalFPB" class="modal fade" role="dialog" >
 					<div class="modal-dialog">
@@ -2903,6 +2425,481 @@ $(document).ready(function(){
                 </div><!-- end of container 5 -->
 
 				<!-- Start of container 6 -->
+				
+				<div class="card container">
+
+					<!-- <img class="img" src="lady liberty.png" style=" width: 85%;"> -->
+
+					<!-- <a class="btn btn-raised btn-sm btn-primary pull-right" value="" id="saveQuit3" style="color:white;float:right;text-decoration:none;margin-top:2%;">Save and Quit</a> -->
+
+					<h6 style="padding-top: 30px"><i class="fa fa-group"> </i><b> FAMILY BACKGROUND</b></h6>
+
+					<hr style="padding-bottom: 10px;">
+
+					<!-- for married ones -->
+
+					<div id="married_div" class="row col-md-12">
+
+						<h2 style="padding-top: 2%;" align="center"> Spouse </h2>
+
+						<div class="col-md-6">
+
+							<div class="form-group label-floating">
+
+					      		<label class="control-label" for="slname">Spouse's Last Name</label>
+
+					      		<input id="slname" type="text" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event);' onkeyup='(event);' >
+
+							</div>
+
+							<div class="form-group label-floating">
+
+					      		<label class="control-label" for="sfname">Spouse's First Name</label>
+
+					      		<input id="sfname" type="text" name="spouse_firstname" maxlength="50" class="form-control" name="spouse_lastname" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+					      		<label class="control-label" for="smname">Spouse's Middle Name</label>
+
+					      		<input id="smname" type="text" name="spouse_midname" maxlength="50" class="form-control" name="spouse_lastname" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-6">
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="occupation">Spouse's Occupation</label>
+
+								<input type="text" name="spouse_occ" id="occupation" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="employer-name">Company Name</label>
+
+								<input type="text" name="spouse_empname" id="employer-name" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+						</div>
+
+					</div> <!-- end for married ones -->
+
+								<!-- for widowed ones -->
+
+					<div id="widowed_div" class="row col-md-12">
+
+						<h2 style="padding-top: 2%;" align="center"> Spouse </h2>
+
+						<div class="col-md-6">
+
+							<div class="form-group label-floating">
+
+					      		<label class="control-label" for="slname">Spouse's Last Name</label>
+
+					      		<input id="slname" type="text" name="widowed_lname" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+					      		<label class="control-label" for="sfname">Spouse's First Name</label>
+
+					      		<input id="sfname" type="text" name="widowed_fname" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+					      		<label class="control-label" for="smname">Spouse's Middle Name</label>
+
+					      		<input id="smname" type="text" name="widowed_midname" class="form-control" name="spouse_lastname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-6">
+
+						</div> 
+
+					</div> <!-- end for widowed ones -->
+
+					<div class="row col-md-12">
+
+						<div class="col-md-6">
+
+							<h3 style="padding-top: 3%;" align="center">Father's Information</h3>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="flname">Father's Last name</label>
+
+								<input type="text" name="flname" id="flname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="ffname">Father's First Name</label>
+
+								<input type="text" name="ffname" id="ffname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="fmname">Father's Middle Name</label>
+
+								<input type="text" name="fmname" id="fmname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+								<label class="control-label" for="fplace_birth">Place of Birth</label>
+								<input type="text" name="father_placebirth" id="fplace_birth" class="form-control" data-toggle="modal" data-target="#modalFPB"  readonly>
+							</div>
+
+						</div>
+
+						<div class="col-md-6">
+
+							<h3 style="padding-top: 3%;" align="center">Mother's Information</h3>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="mlname">Mother's Maiden name</label>
+
+								<input type="text" name="mother_lname" id="mlname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="mfname">Mother's First Name</label>
+
+								<input type="text" name="mother_fname" id="mfname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="mmname">Mother's Middle Name</label>
+
+								<input type="text" name="mother_midname" id="mmname" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+							</div>
+
+							<div class="form-group label-floating">
+
+								<label class="control-label" for="mplace_birth">Place of Birth</label>
+
+								<input type="text" name="mother_placebirth" id="mplace_birth" class="form-control" data-toggle="modal" data-target="#modalMPB" readonly>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-md-12">
+
+						<label class="switch col-md-4">
+
+							<input id="positive" type="checkbox"/>
+
+							<div class="slider round"></div>
+
+						</label>
+
+						<h5 class="col-md-5">  Do you have child/Children?</h5>	
+
+					</div>
+
+
+
+                    <div class="wawsibling btn-group-sm"  id="siblings">
+
+                    	<div class="row">
+
+                    		<div class="col-md-12">	
+
+                      			<button type="button" class="btn btn-sm btn-raised btn-info add_field_button_sibling">Add Sibling</button>
+
+                    		</div>
+
+                    	</div>
+
+                      <div class="input_fields_wrap_sibling">
+
+                        <div class="row col-md-12">
+
+                          <div class="col-md-6">
+
+                            <div class="col-md-7">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="sibling" >Enter sibling name</label>
+
+                                <input type="text" name="sibling1" id="sibling" class="form-control" onkeypress='return disableNumeric(event);'>
+
+                              </div>
+
+                            </div> 
+
+                            <div class="col-md-3">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="sage">Age</label>
+                                
+                                <input type="text" class="form-control" name="sibling_age1" id="sage" minlength="1" class="form-control" maxlength="2" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div> <!-- second sibling -->
+
+                        <div class="row col-md-12">
+
+                          <div class="col-md-6">
+
+                            <div class="col-md-7">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="sibling" >Enter sibling name</label>
+
+                                <input type="text" name="sibling2" id="sibling" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+                              </div>
+
+                            </div> 
+
+                            <div class="col-md-3">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="sage">Age</label>
+
+                               <input type="text" class="form-control" name="sibling_age2" id="sage" minlength="1" class="form-control" maxlength="2" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
+
+                              </div>
+
+                            </div>
+
+                            <button type="button" style="margin-top: 8%" class="btn btn-raised btn-sm btn-danger pull-right remove_field" >Remove</button>
+
+                          </div>
+
+                        </div><!-- third sibling -->
+
+                        <div class="row col-md-12" >
+
+                          <div class="col-md-6">
+
+                            <div class="col-md-7">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="sibling" >Enter sibling name</label>
+
+                                <input type="text" name="sibling3" id="sibling" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+                              </div>
+
+                            </div> 
+
+                            <div class="col-md-3">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="sage">Age</label>
+
+                                <input type="text" class="form-control" name="sibling_age3" id="sage" minlength="1" class="form-control" maxlength="2" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
+
+                              </div>
+
+                            </div>
+
+                            <button type="button" style="margin-top: 8%" class="btn btn-raised btn-danger btn-sm pull-right remove_field">Remove</button>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+
+                    <div class="wawchild btn-group-sm" id="children" style="display: none;">
+
+                      <div class="input_fields_wrap">
+
+                        <div class="row col-md-12">
+
+                        <div class="col-md-6">
+
+                            <!-- fillings -->
+
+                          </div>
+
+                        <div class="col-md-6">
+
+                          <button type="button" class="btn btn-raised btn-sm btn-info add_field_button">Add Dependents</button>
+
+                        </div>
+
+                          <div class="col-md-6">
+
+                            <!-- fillings -->
+
+                          </div>
+
+	                    </div>
+
+	                    <div class="row col-md-12" id="1chi">
+
+	                    	<div class="col-md-6">
+
+	                    		<!-- fillings -->
+
+	                    	</div>
+
+	                    	<div class="col-md-6">
+
+	                            <div class="col-md-7">
+
+	                              <div class="form-group label-floating">
+
+	                                <label class="control-label" for="child" >Enter child name</label>
+
+	                                <input type="text" name="child_name1" id="child" maxlength="50" class="form-control" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+	                              </div>
+
+	                            </div> 
+
+	                            <div class="col-md-3">
+
+	                              <div class="form-group label-floating">
+
+	                                <label class="control-label" for="age">Age</label>
+
+	                                <input id="age" class="form-control" type="text" name="child_age1" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+
+	                              </div>
+
+	                            </div>
+
+	                        </div>
+
+	                    </div>
+
+                        <div class="row col-md-12" id="2chi">
+
+                          <div class="col-md-6">
+
+                            <!-- fillings -->
+
+                          </div>
+
+                          <div class="col-md-6">
+
+                            <div class="col-md-7">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="child" >Enter child name</label>
+
+                                <input type="text" name="child_name2" id="child" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+                              </div>
+
+                            </div> 
+
+                            <div class="col-md-3">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="age">Age</label>
+
+                                <input id="age" class="form-control" type="text" name="child_age2" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+
+                              </div>
+
+                            </div>
+
+                            <button type=button style="margin-top: 8%" class="btn btn-raised btn-sm btn-danger pull-right remove_field">Remove</button>
+
+                          </div>
+
+                        </div>
+
+                        <div class="row col-md-12" id="3chi">
+
+                          <div class="col-md-6">
+
+                            <!-- fillings -->
+
+                          </div>
+
+                          <div class="col-md-6">
+
+                            <div class="col-md-7">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="child" >Enter child name</label>
+
+                                <input type="text" name="child_name3" id="child" class="form-control" maxlength="50" onkeypress='return disableNumeric(event)'; onkeyup='(event);'>
+
+                              </div>
+
+                            </div> 
+
+                            <div class="col-md-3">
+
+                              <div class="form-group label-floating">
+
+                                <label class="control-label" for="age">Age</label>
+
+                                <input id="age" class="form-control" type="text" name="child_age3" maxlength="2" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+
+                              </div>
+
+                            </div>
+
+                            <button type=button style="margin-top: 8%" class="btn btn-raised btn-danger btn-sm pull-right remove_field">Remove</button>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+					<!-- buttons -->
+
+					<!-- <button type="button" class="btn btn-raised btn-primary pull-left" onclick="document.getElementById('container2').style.display='block';document.getElementById('container3').style.display='none';">PREVIOUS</button>
+
+					<button type="button" style="margin-bottom: 1%" class="btn btn-raised btn-primary pull-right" onclick="document.getElementById('container3').style.display='none'; document.getElementById('container4').style.display='block';">NEXT</button>	 -->
+
+				</div> <!-- end of container 3 -->
 
 				<div class="card container">
 
