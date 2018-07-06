@@ -867,78 +867,10 @@ $(document).ready(function(){
 
 					<hr style="padding-bottom: 10px;">
 
+
 					<div class="row col-md-12">
 
 						<div class="col-md-6">
-
-							<label>Height</label>
-
-							<div class="row">
-
-								<div class="col-md-6">
-
-									<div class="form-group label-floating">
-
-										<label for="feet" class="control-label">Feet (ft.)</label>
-
-										<input type="text" name="feet" id="feet" minlength="0" class="form-control" id="pounds" maxlength="1" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
-
-									</div>
-
-								</div>
-
-								<div class="col-md-6">
-
-									<div class="form-group label-floating">
-
-										<label for="inches" class="control-label">Inches (in.)</label>
-
-										<input type="text" name="inch" id="inches" minlength="0" class="form-control" id="pounds" maxlength="3" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="form-group label-floating">
-
-								<label for="bloodtype" class="control-label">Blood type</label>
-
-								<select class="select form-control" id="bloodtype" name="btype">
-
-									<option value="A+">A+</option>
-									<option value="Am">A&#45;</option>
-
-									<option value="BA">B+</option>
-									<option value="Bm">B&#45;</option>
-
-									<option value="AB+">AB+</option>
-									<option value="ABm"> AB&#45;</option>
-
-									<option value="O+">O+</option>
-									<option value="Om">O&#45;</option>
-
-								</select>
-
-							</div>
-
-						</div>
-
-
-
-						<div class="col-md-6">
-
-							<label>Weight</label>
-
-							<div class="form-group label-floating">
-
-								<label for="pounds" class="control-label">Pounds (lbs:) (1kg = 2.20 lbs)</label>
-
-								<input type="text" name="weight" id="weight" class="form-control" id="pounds" maxlength="3" onkeypress='return disableLettersOthers(event);' onkeyup='(event);'>
-
-							</div>
-
 							<div class="form-group label-floating">
 
 								<label for="religion" class="control-label" onkeypress='return disableNumeric(event);' onkeyup='(event);' >Religion</label>
@@ -946,15 +878,6 @@ $(document).ready(function(){
 								<input type="text" name="religion123" class="form-control" id="religion" maxlength="30" onkeypress='return disableNumeric(event);' onkeyup='(event);'>
 
 							</div>
-
-						</div>
-
-					</div>
-
-					<div class="row col-md-12">
-
-						<div class="col-md-6">
-
 							<label>Select Current Address<label class="text-danger">*</label></label>
 
 							<div class="form-group label-floating">
